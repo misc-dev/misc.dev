@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Apr 2020 18:43:04 -0700</lastBuildDate>
+    
+        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Mic Check</title>
+        <link>http://example.org/posts/mic-check/</link>
+        <pubDate>Sat, 25 Apr 2020 18:43:04 -0700</pubDate>
+        
+        <guid>http://example.org/posts/mic-check/</guid>
+        <description>My New Hugo Site http://example.org/posts/mic-check/ -&lt;h1 id=&#34;microphone-check&#34;&gt;Microphone Check&lt;/h1&gt;
+&lt;p&gt;One two, one two!&lt;/p&gt;
+&lt;p&gt;In this blog I will discuss things I am interested in, which are broad and varied, hence the name &lt;em&gt;&lt;strong&gt;misc&lt;/strong&gt;&lt;/em&gt;. I will try to stay focused on topics related to my professional career, thus topics that will likely be covered most often include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;M&lt;/strong&gt;: Management&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I&lt;/strong&gt;: Information Studies (and Interface/Interaction Design)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S&lt;/strong&gt;: Systems Thinking/Theory&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;: Complexity&lt;/li&gt;
+&lt;li&gt;and of course, &lt;strong&gt;dev&lt;/strong&gt;elopment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hence, again, the name &lt;strong&gt;misc.dev&lt;/strong&gt;.&lt;/p&gt;
+- http://example.org/posts/mic-check/ - </description>
+        </item>
+    
+    
+  </channel>
+</rss> 

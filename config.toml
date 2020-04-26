@@ -1,0 +1,5 @@
+baseURL = "http://misc.dev/"
+languageCode = "en-us"
+title = "misc.dev"
+theme = "diary"
+publishDir = "docs"
