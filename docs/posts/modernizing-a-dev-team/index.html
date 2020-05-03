@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html><head>
+<title>Modernizing a Software Development Team</title>
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="A case study in adopting modern development practices">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+<link rel="stylesheet" href="https://misc.dev/scss/journal.min.56b67b8b01d7cd1015ed14414fd2fc33ebfb2e8413dcbc47c5cd734544c92cd7.css" integrity="sha256-VrZ7iwHXzRAV7RRBT9L8M&#43;v7LoQT3LxHxc1zRUTJLNc=" media="screen">
+
+
+
+<link rel="stylesheet" href="https://misc.dev/scss/dark-mode.min.5a2bbd1758c83affd639a91fbfd5cc681b1a5574df99442825c444dd40504b13.css" integrity="sha256-Wiu9F1jIOv/WOakfv9XMaBsaVXTfmUQoJcRE3UBQSxM=" media="screen">
+
+
+<script src="https://misc.dev//js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+<script src="https://misc.dev//js/table.js"></script>
+
+
+
+
+<script src="https://misc.dev//js/toc.js"></script>
+
+
+
+
+
+
+
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://misc.dev/">
+    
+        <div class="nav-title">
+            MISC DEV
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	2020 MISC DEV
+	
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#modernizing-a-software-development-team" v-on:click="closeDrawer" id="modernizing-a-software-development-team-nav">
+										 Modernizing a Software Development Team
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#outdated-systems-beget-outdated-skills" v-on:click="closeDrawer" id="outdated-systems-beget-outdated-skills-nav">
+										 Outdated systems beget outdated skills
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#case-study-ucla-library" v-on:click="closeDrawer" id="case-study-ucla-library-nav">
+										 Case Study: UCLA LIbrary
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#i-evaluation" v-on:click="closeDrawer" id="i-evaluation-nav">
+										 I. Evaluation
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#1-structure" v-on:click="closeDrawer" id="1-structure-nav">
+										 1. Structure
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#2-process" v-on:click="closeDrawer" id="2-process-nav">
+										 2. Process
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#3-software" v-on:click="closeDrawer" id="3-software-nav">
+										 3. Software
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#4-skills" v-on:click="closeDrawer" id="4-skills-nav">
+										 4. Skills
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#ii-inspiration" v-on:click="closeDrawer" id="ii-inspiration-nav">
+										 II. Inspiration
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#the-5-pillars" v-on:click="closeDrawer" id="the-5-pillars-nav">
+										 The 5 Pillars
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#iii-transformation" v-on:click="closeDrawer" id="iii-transformation-nav">
+										 III. Transformation
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#1-strategy" v-on:click="closeDrawer" id="1-strategy-nav">
+										 1. Strategy
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#2-structure" v-on:click="closeDrawer" id="2-structure-nav">
+										 2. Structure
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#3-process" v-on:click="closeDrawer" id="3-process-nav">
+										 3. Process
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#4-culture" v-on:click="closeDrawer" id="4-culture-nav">
+										 4. Culture
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#conclusion" v-on:click="closeDrawer" id="conclusion-nav">
+										 Conclusion
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a class="pagination-action" v-on:click="toggleDarkMode">
+            <i class="material-icons pagination-action-icon" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons pagination-action-icon" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </a>
+        
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#modernizing-a-software-development-team" v-on:click="closeDrawer" id="modernizing-a-software-development-team-nav">
+										 Modernizing a Software Development Team
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#outdated-systems-beget-outdated-skills" v-on:click="closeDrawer" id="outdated-systems-beget-outdated-skills-nav">
+										 Outdated systems beget outdated skills
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#case-study-ucla-library" v-on:click="closeDrawer" id="case-study-ucla-library-nav">
+										 Case Study: UCLA LIbrary
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#i-evaluation" v-on:click="closeDrawer" id="i-evaluation-nav">
+										 I. Evaluation
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#1-structure" v-on:click="closeDrawer" id="1-structure-nav">
+										 1. Structure
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#2-process" v-on:click="closeDrawer" id="2-process-nav">
+										 2. Process
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#3-software" v-on:click="closeDrawer" id="3-software-nav">
+										 3. Software
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#4-skills" v-on:click="closeDrawer" id="4-skills-nav">
+										 4. Skills
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#ii-inspiration" v-on:click="closeDrawer" id="ii-inspiration-nav">
+										 II. Inspiration
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#the-5-pillars" v-on:click="closeDrawer" id="the-5-pillars-nav">
+										 The 5 Pillars
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#iii-transformation" v-on:click="closeDrawer" id="iii-transformation-nav">
+										 III. Transformation
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#1-strategy" v-on:click="closeDrawer" id="1-strategy-nav">
+										 1. Strategy
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#2-structure" v-on:click="closeDrawer" id="2-structure-nav">
+										 2. Structure
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#3-process" v-on:click="closeDrawer" id="3-process-nav">
+										 3. Process
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#4-culture" v-on:click="closeDrawer" id="4-culture-nav">
+										 4. Culture
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#conclusion" v-on:click="closeDrawer" id="conclusion-nav">
+										 Conclusion
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://misc.dev/">
+            MISC DEV
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" v-on:click="toggleDarkMode">
+            <i class="material-icons" v-if="isDarkMode">
+                brightness_4
+            </i>
+            <i class="material-icons" v-else="isDarkMode">
+                brightness_7
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://misc.dev/">
+        <div class="single-column-header-title">MISC DEV</div>
+        
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+                
+            
+
+            <div class="post-head-wrapper"
+                 style="background-image: url('/images/modernizing.jpg')">
+                <div class="post-title">
+                    Modernizing a Software Development Team
+                    
+                    <div class="post-subtitle">
+                        A case study in adopting modern development practices
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2020-05-01 21:16
+                        </time>
+                        
+
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/management">management</a>
+                                &nbsp;
+                            
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h1 id="modernizing-a-software-development-team">Modernizing a Software Development Team</h1>
+<h2 id="outdated-systems-beget-outdated-skills">Outdated systems beget outdated skills</h2>
+<p>In this blog I write about systems and software primarily from the viewpoint of organizations that are not themselves technology firms. The choice to outsource all software development or to retain a team of developers within an organization’s IT department is a big one. I won’t discuss the timeless “build or buy” decision in this post. Instead, I would like to discuss what an organization does when an in-house software development team has grown outdated. Technology changes fast, and without motivation (at the individual, team, or organizational level) to keep current with new tools and methods, a team of developers can very easily find that their skills are a decade or two behind the times.</p>
+<p>Anecdotally, this situation seems to be quite common in non-profit and government organizations. Since these organizations are not driven by profits, improvements to performance and user experience are lower priorities than they are to commercial organizations. Thus, investments in improving software are reduced in size and frequency. If the organization does not prioritize improving the software, the tech stack will become outdated as do the skillsets of the people who are paid to keep that outdated system running.</p>
+<p>But what happens when such a team is forced to overhaul an outdated system? Perhaps the underlying tools are insecure and no longer supported. Or perhaps the code has simply become unmaintainable over the years. Can a team whose members have decades-old skills pick up modern tools to build the new system without external help? Will the team require a longer time frame for completion? Will a reduction in scope of the project be necessary to make it realistically achievable? Will the team require extra training resources to modernize their skills? Can the organization tolerate any (or all) of those constraints?</p>
+<p>If a consultant must be brought in to help with development the organization will likely (and rightly so) question the ongoing need for the in-house team. It seems that many organizations go through cycles of insourcing and outsourcing technology. Over time the in-house team grows stale and eventually a new IT director decides to reduce in-house resources and go with an external vendor to modernize. Over time this also becomes a problem. Either it is too costly because it is a custom solution for the organization, or it is a generic solution that proves insufficient for the organization’s needs. Either way, a new IT director comes in and recognizes that an in-house team is needed to solve the problem. And so it goes.</p>
+<p>Is this cycle OK, or is it something that should be avoided? Technology professionals command high salaries. Therefore, letting go of an entire team, or even a significant chunk of one, can be a quick way to recover a large chunk of an organization&rsquo;s budget. Outsourcing technology is not exactly cheap either, but there are probably savings to be made. Beyond costs, cutting an in-house team means the loss of a large amount of institutional knowledge. The value of that tacit knowledge can be immense, especially in organizations with large numbers of people, departments, and long-running interdependent systems (e.g. many non-profit and government organizations).</p>
+<p>I will not try to argue whether it is better to in-source or out-source. I think it will depend on each organization’s context. However, I will say that if an in-house team already exists, it seems to me in more cases than not that the ideal solution is to keep the team and simply ensure that it does not grow stale. I am sure there are many scenarios where that is not true, but for the sake of argument (and for the sake of the remainder of this blog post) let’s assume that keeping the team is the preferred solution. We are then faced with the following two questions: “how can we modernize an existing software development team?” and “how can we ensure that a software development team’s skills do not grow stale?” A pithy reply might be “build systems that are easy to incrementally upgrade over time so that the technology changes with the times and so do the skills of its maintainers.” Sounds great as a theory, <em>but how do you actually do that in a real life setting?</em></p>
+<hr>
+<h2 id="case-study-ucla-library">Case Study: UCLA LIbrary</h2>
+<p>As it so happens, I am in the middle of modernizing a real life team. In the Fall of 2018 I took on a new position as the Head of Software Development &amp; Library Systems at the <a href="https://library.ucla.edu">UCLA Library</a>. Over the past 18 months, I have initiated several  substantial changes to modernize our development processes, tech stacks, and skills.</p>
+<h3 id="i-evaluation">I. Evaluation</h3>
+<p>I spent the first few months on the job mostly observing the team and getting up to speed on their current projects and future ambitions. Here is what I found.</p>
+<h4 id="1-structure">1. Structure</h4>
+<ul>
+<li><strong>Low team cohesion.</strong> The developers were in two different teams without much collaboration between them. The supporting sys admins were on a third team. Thus software development was split across three different managers.</li>
+<li><strong>Siloed knowledge.</strong> Most of the developers worked on projects as solo developers, not as a team. This gives each system a single point of failure in regards to maintenance and support.</li>
+</ul>
+<h4 id="2-process">2. Process</h4>
+<ul>
+<li><strong>No standard dev process.</strong> As solo agents without a standard process, the developers mostly reacted to incoming tickets from stakeholders.</li>
+<li><strong>Unending projects.</strong> Without a standard process to define scope, most projects did not have a clear goal for completion and had lingered for years.</li>
+<li><strong>Unrealistic volume of projects.</strong> The combination of unending projects with a continual desire to keep doing more <em>new</em> projects meant that the list of active projects grew without bound.</li>
+</ul>
+<h4 id="3-software">3. Software</h4>
+<ul>
+<li><strong>Untenable portfolio of systems.</strong> As the aging digital collections system became unable to support the requirements of new projects, a series of boutique systems were created.</li>
+<li><strong>Inconsistent UX.</strong> Each system was created by a different developer or vendor, with no central UX process, person, or team to review them.
+Difficult maintenance and deployments. Technical debt reached a level at which it became impossible to update some systems. Deployments for most systems were manual and cumbersome.</li>
+<li><strong>Spotty performance and availability.</strong> The older systems experience frequent outages requiring reboots. Others have high latency. Some are all but broken in modern browsers (i.e. Flash).</li>
+</ul>
+<h4 id="4-skills">4. Skills</h4>
+<ul>
+<li><strong>Pockets of stagnation.</strong> Some of those siloed developers working on aging systems were never asked or given time to build with new tools.</li>
+<li><strong>Widely diverse tool sets.</strong> Each system was built by one of an array of siloed developers or another array of independent vendors, each using their preferred tools, leading to a portfolio that goes well beyond the modern trend of “polyglot.”</li>
+<li><strong>Team attrition.</strong> Developers for major systems, notably the original digital collections system and the main website CMS, left the team and their positions were filled with developers whose expertise fit newer projects’ needs instead. Thus, the two most important systems are in a fragile state of support.</li>
+<li><strong>Outsourced expertise.</strong> Many of the systems were built by vendors and handed over to the in-house developers for support.</li>
+</ul>
+<h3 id="ii-inspiration">II. Inspiration</h3>
+<p>Having diagnosed several symptoms of a team in need of modernization I was faced with the questions posed in the discussion above about what kinds of remedies would be effective for a real-life team. I had done a lot of reading on Agile, DevOps, and UX in my previous job, but had only made minor tweaks to the way that team operated. That organization (<a href="https://www.getty.edu/">The Getty</a>) had undergone a reorganization, and my role as the architect and manager was in a state of limbo. In my new position at UCLA, I came in as the agent of change and I had the authority to set my own vision for the team. This was my chance to implement the ideas I had been learning.</p>
+<h4 id="the-5-pillars">The 5 Pillars</h4>
+<p>There are countless books, articles, and blogs that give the kind of advice I was seeking. But the five books listed below are the ones I have found to be the most inspiring, insightful, pragmatic, and (most importantly) actionable. They dig to the root of the problems they tackle and give practical advice on how to adopt the philosophies they put forth. I come back to them often for review and reference. These books are the pillars upon which I based the transformation of the team.</p>
+<table>
+  <tr>
+  	<td><img align="left" width="150" alt="About Face book cover" src="/images/about_face_cover.jpg" style="margin:10px;">
+	<a href="http://www.worldcat.org/oclc/882938454">About Face: The Essentials of Interaction Design</a> (4th ed., 2014)
+	<br/>by Alan Cooper, Robert Reimann, David Cronin, and Christopher Noessel
+	<br/><br/>There are many great books about user research and interaction/interface design. This is the one that got me hooked on UX as a standard part of the development process.</td>
+  </tr>
+  <tr>
+  	<td><img align="left" width="150" alt="The Agile Samurai book cover" src="/images/agile_samurai_cover.jpg" style="margin:10px;">
+  	<a href="http://www.worldcat.org/oclc/936381130">The Agile Samurai</a> (2014) 
+  	<br/>by Jonathan Rasmusson
+  	<br/><br/>You can easily get lost in the various flavors of Agile, such as Kanban, Scrum, XP, etc. This book provides a guide to the Agile process that is agnostic about any particular methodology. It gives you just the best practices from across all of the variations of Agile.</td>
+  </tr>
+  <tr>
+  	<td><img align="left" width="150" alt="The DevOps Handbook book cover" src="/images/devops_handbook_cover.jpg" style="margin:10px;">
+  	<a href="http://www.worldcat.org/oclc/1029506934">The DevOps Handbook</a> (2016) 
+  	<br/>by Gene Kim, Jez Humble, Patrick Debois, and John Willis
+  	<br/><br/>This is the most comprehensive assessment of DevOps I have read. The authors do a great job of explaining what DevOps is and isn’t, where it came from, what it offers, why it helps, and how to bring it into your shop.</td>
+  </tr>
+  <tr>
+  	<td><img align="left" width="150" alt="Building Evolutionary Architectures book cover" src="/images/evolutionary_architectures_cover.jpeg" style="margin:10px;">
+  	<a href="http://www.worldcat.org/oclc/1043880409">Building Evolutionary Architectures</a> (2018) 
+  	<br/>by Neal Ford, Rebecca Parsons, and Patrick Kua
+  	<br/><br/>Microservices and Event-Driven systems have been covered by many authors before. This group of architects manages to wrap these topics in a nice theory about “evolutionary” systems (those that can be adapted instead of becoming fragile) and offers advice on how to shift your own architectures in this direction.</td>
+  </tr>
+  <tr>
+  	<td><img align="left" width="150" alt="Debuggin Teams book cover" src="/images/debugging_teams_cover.jpg" style="margin:10px;">
+  	<a href="http://www.worldcat.org/oclc/954285260">Debugging Teams</a> (2016) 
+  	<br/>by Neal Ford, Rebecca Parsons, and Patrick Kua
+  	<br/><br/>It’s not all just about process, tools, and architecture. Modernizing a team is also about leadership and management. This book is a concise and practical guide to managing teams, especially those involved in technology development.</td>
+  </tr>
+</table>
+<h3 id="iii-transformation">III. Transformation</h3>
+<p>Taking inspiration from those books, I pushed the following changes to address the issues discovered during the evaluation phase.</p>
+<h4 id="1-strategy">1. Strategy</h4>
+<p>It starts with the big picture view and the question “what do we envision for the future of the UCLA Library’s web presence?” I want a consistent and consolidated user experience. At the moment, we have content stored in multiple repositories, each with their own search interfaces that are not similar in either aesthetics or functionality. Why should users have to search for the right search interface? I envision a single search for all content in the library, even if the content is distributed across a dozen or more backend systems. And when systems or collections necessitate custom interfaces, they should have the same design elements and provide consistent experiences for the users. To achieve those UX and architectural goals, I created a new UX team and a new Architecture team.</p>
+<ul>
+<li>
+<p><strong>UX Strategy.</strong> Two of the developers on my team were interested in UX. One was more interested in research, the other in design. A perfect complementary pair! I enrolled them both in the <a href="https://www.uclaextension.edu/design-arts/uxgraphic-design/certificate/user-experience">UX Certificate</a> program at <a href="https://www.uclaextension.edu/">UCLA Extension</a>. A librarian in another unit had experience with usability testing, analytics, and SEO. I brought the four of us together and formed the UX Team.</p>
+<p>In our first year, we assessed the state of UX at the library using a maturity model and put together a 3 year <strong><a href="https://ucla.box.com/s/mldgoduuf33hsr3ysgrahzczrgni7kuo">UX Strategic Plan</a></strong> to move us to the next level of that model. This plan includes setting a standard process for all software development that requires UX research and design out the outset of any new development project. We are currently putting this into action by conducting thorough user research ahead of our website redesign.</p>
+</li>
+<li>
+<p><strong>Architectural Strategy.</strong> The Architecture Team is made up of the technical leads from each of the software development subteams (described below). We spent most of the first year discussing policies about process and tooling as these underwent significant changes. We are now having more substantive discussions about actual architecture and a development roadmap as we prepare for complete replacements of our CMS and our library catalog and the &ldquo;sunsetting&rdquo; of several legacy digital collections platforms.</p>
+<p>We aspire to adopt the &ldquo;evolutionary&rdquo; architectures mentioned above, such as event-driven and microservices. These architectures are more maintainable and easier to change over time. No more “setting and forgetting” new systems that add to the large portfolio of fragile legacy monoliths. Instead, we hope to continually update an ecosystem of small components and keep pace with the ever changing requirements of the organization and stakeholders.</p>
+<p>As we build out our new distributed systems based on these architectural philosophies we will migrate content out of the legacy systems. And we will have a party every time one of those old systems is turned off.</p>
+</li>
+</ul>
+<h4 id="2-structure">2. Structure</h4>
+<ul>
+<li>
+<p><strong>Unification.</strong> One of the tenets of DevOps culture is that everyone is on the same team with shared objectives. No more division by functional duties or expertise (i.e. Devs vs Ops). No more throwing things &ldquo;over a wall&rdquo; for someone else to deal with. Thus, I brought both groups of developers as well as the sys admins that support them into a single Software Development Team, with a single manager (me).</p>
+</li>
+<li>
+<p><strong>Architectural Subteams.</strong> To encourage the shift in our mindset about process and architecture, the team was organized into focused subteams. This move was based on the teaching of <a href="http://www.melconway.com/Home/Conways_Law.html">Conway’s Law</a>, which states that “any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization&rsquo;s communication structure.” The subteams are:</p>
+<ul>
+<li><strong>Applications Team</strong> (discovery, access, and scholarly apps;)</li>
+<li><strong>Services Team</strong> (backend APIs; deliver services to the applications)</li>
+<li><strong>Systems Team</strong> (vendor systems; middleware; internal business apps)</li>
+<li><strong>The Labs Team</strong> (AI/ML experiments)</li>
+</ul>
+<p>This organization forces a distinct separation between apps and services, thus avoiding monolithic structures, and encourages cleaner API designs and documentation.</p>
+</li>
+<li>
+<p><strong>The Matrix.</strong> Each subteam is cross-functional, with one or more members from the architect’s group, the developers, dev support (sysadmins), project management, and UX when needed. This makes them self-sufficient, a key element of Agile teams as described in The Agile Samurai.</p>
+<p><img src="/images/the_matrix.png" alt="The Matrix of teams"></p>
+<p>The members of these teams have been shuffled as needed, with one or two people swapping teams at the close of a quarter. The goal is to be flexible but to avoid frequent context switching.</p>
+</li>
+</ul>
+<h4 id="3-process">3. Process</h4>
+<p>The standardization of processes has probably been the biggest and most impactful change the team has adopted. The reorganization certainly changed the culture drastically from one of solo programmers to one based in teamwork. But it has been the adoption of consistent processes for planning our work, contributing code, and deployment that has pushed the team furthest towards being a modern dev team and visibly increasing the quality and quantity of our work.</p>
+<ul>
+<li>
+<p><strong>Agile Planning.</strong> We have adopted a &ldquo;non-denominational&rdquo; set of Agile practices as described in <em>The Agile Samurai</em>. This includes adoption of the usual practices, such as:</p>
+<ul>
+<li>working in two week sprints <em>(each subteam)</em></li>
+<li>holding daily standup meetings <em>(full team)</em></li>
+<li>using Kanban boards to visualize our work <em>(each subteam)</em></li>
+<li>including stakeholders in planning meetings <em>(some subteams)</em></li>
+<li>conducting retrospectives every sprint <em>(each subteam)</em></li>
+</ul>
+  <br/>
+<p>Most professionals that run an Agile development shop will advise you to only work on one project at a time. If you have five projects that each take a month to complete, it is better to work on one at a time and make only one wait five months than to work on all five in parallel and make all customers wait five months.
+<br/></p>
+<p>However, in non-profit&rsquo;s we do not have the luxury of turning down projects. Thus, we have had to break some rules of Agile to accommodate parallel projects. As discussed in <em>The Agile Samurai</em> the four biggest constraints on a project are time, money, quality, and scope. In non-profits, money is rarely adjusted. If the work is grant-funded, then adjusting time is also difficult. If you want be proud of your work, then you aren&rsquo;t willing to sacrifice quality either. That leaves scope as the constraint to adjust.</p>
+<p>Thus, in addition to <em>sprint planning</em>, I also engage our stakeholders and administrators in <em>quarterly planning</em>. We go over the various projects and requested improvements, prioritize them, estimate the size of each initiative, and reduce the scope of work to a size that is realistically achieveable. This is Agile planning at a <em>macro</em> level. It is something I have been trying to push upwards in the organization to avoid the crushing burden of the always-increasing list of projects.</p>
+</li>
+<li>
+<p><strong>Continuous Delivery.</strong> Once the devs were on teams and not working on solo projects we needed to standardize the way code gets contributed, approved, merged, and deployed. The ideal scenario in a modern dev team is Continuous Deployment, in which code that passes automated test suites is automatically merged to the master branch and automatically deployed to production. We opted for intermediate steps in which we strive for Continuous Integration and Continuous Delivery. Code that passes automated tests is manually reviewed by another developer. If approved and merged it is automatically deployed to a staging environment, but production deployment remains a &ldquo;push button&rdquo; operation.</p>
+<p>Continuous Deployment requires high confidence in the quality of your team&rsquo;s code, or an extremely thorough test suite, or an extremely easy process to roll back (or forward fix) production when problems occur. Really, you want all three of those attributes. We have made strides in improving the quality and rigor of our test suites, but we know we still have a long way to go. Therefore, we require that all code is reviewed by a second developer (using pull requests) before merging into master.</p>
+<p>I will forbear further discussion of our development practices and deployment pipeline. This topic can easily become just a list of particular tools the team chose for version control, testing and CI, configuration management, containerization, orchestration, hosting, pipeline automation, etc. and this post is about team management, not about tool selection. Suffice it to say we have chosen tools for each of those aspects of the dev process and tried to make our practices standard across all of the subteams. The standardization of the tools and process is the important part, not the particular tool.</p>
+</li>
+</ul>
+<h4 id="4-culture">4. Culture</h4>
+<p>The final piece in my attempt to modernize the team was the most nebulous: changing the culture. How do you change the culture of an entire team? In settings with an existing culture or set of policies and norms, I suspect this could be quite a challenge. However, since most of the developers had been working on solo projects, there was not much of an ingrained culture to confront. This it not to say that there was no culture at all. All organizations have a culture. But some are more pronounced than others and some are more rigid than others. In this case, it was neither. It was about as close to a white canvas as one could hope for without building the team from scratch.</p>
+<p>Thus, given the opportunity to evangelize a new culture, I faced the question: &ldquo;what kind of culture do I wish to introduce?&rdquo; For this, I leaned heavily on the advice of the <em>The DevOps Handbook</em>. In that book, the authors break down DevOps culture into three &ldquo;ways&rdquo;.</p>
+<p>This first way focuses on making the development process more efficient and improving the <em>feed forward</em> cycles. The second way focuses on improving <em>feed back</em> cycles so that problems are discovered and addressed as soon as possible. The third way focuses on methods of continual improvement of the team and its work through learning and experimentation. These three &ldquo;ways&rdquo; are both necessary and sufficient to improve the quality and quantity of work a software development team produces. Thus, I tried to introduce changes that would help us in each of the three ways.</p>
+<p><em>The 1st Way: Efficient Feed Forward Cycles.</em> The changes I introduced here were covered in the sections above. These include:</p>
+<ul>
+<li><strong>Self sufficient teams</strong></li>
+<li><strong>Agile process and planning</strong></li>
+<li><strong>Continuous Delivery</strong></li>
+</ul>
+<p><em>The 2nd Way: Fast Feedback Cycles.</em> Again, the changes I introduced here were already mentioned above, including:</p>
+<ul>
+<li><strong>Automated testing</strong></li>
+<li><strong>Peer reviews of all committed code</strong></li>
+<li><strong>Mini retrospectives every sprint</strong></li>
+<li><strong>Stakeholders in daily standups</strong> <em>(solves problems faster than email)</em></li>
+</ul>
+<p><em>The 3rd Way: Continual Learning, Experimentation, and Improvement.</em> The changes I introduced to address this final &ldquo;way&rdquo; are what I wish to focus on, as I have not mentioned any of these changes yet.</p>
+<ul>
+<li>
+<p><strong>Refactor Sprints and Goals.</strong> It can be difficult to get individual refactor tickets into a sprint. And even when they make it into the sprint, they will often be neglected and buried by higher priority tickets that address existing (and more visible) goals for the sprint or quarter. Therefore, we began dedicating one sprint each quarter entirely to refactor efforts.</p>
+<p>Some teams that are struggling to deal with small-community open-source platforms have refactor work that will span more than a single sprint, due to the amount of time needed to conduct an audit and set a strategy for the overhaul. Therefore, instead of a refactor sprint, these teams have a refactor goal for the quarter and during each backlog grooming and sprint planning session we make sure that we make progress towards that goal just like any other goal.</p>
+</li>
+<li>
+<p><strong>Learning Fridays.</strong> In order to modernize our skills, the team needs time dedicated to learning new tools and techniques. I began by asking everyone to find time in their own schedules and to dedicate 4 hours a week to learning. I purchased subscriptions to multiple learning platforms for various team members based on their interests and preferred learning methods.</p>
+<p>However, just as refactor tickets will be neglected without an agreed upon time dedicated to them, so goes &ldquo;learning time.&rdquo; Thus, we designated Fridays as a &ldquo;no meetings&rdquo; day and developers are encouraged to spend the entire day on learning and experimentation, though they are free to work on development tickets if they wish. The absence of meetings gives everyone the uninterrupted mental break they need to actually learn new things. We have arranged with our stakeholders to respect the &ldquo;no meeting&rdquo; policy. In fact, now other units in the Library are adopting similar practices.</p>
+<p>I should note that we do have one meeting on Fridays. We have our 15 minute daily standup at the regular time. But instead of looking at each team&rsquo;s Kanban board, we look at the &ldquo;Learning board.&rdquo; Each quarter every member of the team creates learning goals for themselves and creates tickets for those goals in a dedicated Kanban board. We checkin with everyone during the Friday standup and hear about their progress on their learning topics.</p>
+</li>
+<li>
+<p><strong>Knowledge Sharing Sessions.</strong> To spread that learning beyond individuals, we have monthly &ldquo;Dev Jams&rdquo; in which team members demonstrate the tools they have been learning or the experiments they have been conducting. This practice existed before I joined the team, but it had languished for a bit. We revived it and have been experimenting with different formats to keep it fresh.</p>
+</li>
+<li>
+<p><strong>Experimentation.</strong> Improvement isn&rsquo;t just about learning new techniques. Not everything that works well for other organizations will be a good fit for ours.  Therefore, in conjunction with learning new tools and techniques, we must try things out and determine if they improve our processes or products.</p>
+<p>Some of these experiments are conducted by individuals during Learning Fridays, but some are part of the quarterly goals of a subteam. These team experiments are more strategic. They are used to inform decisions about parts of our system architecture or even the viability of entire initiatives. We aim to share that knowledge with our peers via white papers and peer reviewed articles.</p>
+</li>
+<li>
+<p><strong>Quarterly Retrospectives.</strong> Finally, I should note that all of the changes I have discussed so far are experiments in themselves. Some have undergone multiple variations to find a form that is beneficial without being cumbersome. One way we continually assess our culture and customs is through a full-team retrospective each quarter. These retrospectives have been very informative and help us focus on what is of greatest concern rather than spending time on matters of interest but not of import. Once we determine what needs to be addressed, we brainstorm ideas and define action items for the following quarter.</p>
+</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>It&rsquo;s been approximately 18 months since I first began initiating changes in the team. As mentioned above, some of these interventions needed more than one variation before gaining traction. I have been incredibly lucky to join a team that was so accepting of these changes. The team members were aware of their needs and welcomed the opportunity to try new tools and techniques and to transform themselves into a modern dev team. We joke sometimes that by purchasing copies of the books mentioned above for several people on my team that I was assigning reading to them as I do the students in my classes. But jokes aside, the team is very much interested in learning and is always happy to get pointers to good resources.</p>
+<p>So, the question to ask now is, &ldquo;did any of these changes help?&rdquo; I can say with a high level of confidence that yes these changes have improved the quality and quantity of our work and we are now operating like a modern software development team. We still have more to learn and have plenty of room for growth, but we have absolutely leveled up in terms of our DevOps maturity.</p>
+<p>Recall the specific issues I observed in the &ldquo;Evaluation&rdquo; phase above. Here is a summary of how they have been effectively overcome:</p>
+<ul>
+<li>The reorganization addressed the issues of low team cohesion and siloed knowledge. The teamwork has been truly amazing to watch. Pair programming and mob programming have been adopted by the developers without any push from me.</li>
+<li>Agile planning and quarterly planning have tamed the ever-growing list of unending projects. Stakeholders and administrators are aware that adding to the list of projects or goals means reducing the scope of some or all of them because they are involved in the quarterly planning.</li>
+<li>The new UX Team has begun work on a standard process and a new Design System will be delivered as part of our website redesign project, paving the way for a consistent UX across multiple user interfaces.</li>
+<li>The Architecture Team has pushed standardization, thus addressing the issue of diverse toolsets. They have begun work on a development roadmap that will determine the architecture of our future systems that are easy to maintain and thus address the performance and availability issues.</li>
+<li>There is a fifth subteam I did not mention above, named the Legacy Team. Each quarter this team selects one or more legacy digital collections applications and aims to migrate the content into the new repository and shut down the legacy system, thus reducing our portfolio of supported systems.</li>
+<li>The three preceding measures all address the issues of team attrition and outsourced expertise as we turn off the old systems and build the new systems ourselves.</li>
+<li>The DevOps culture and Learning Fridays have addressed the pockets of stagnating skills.</li>
+</ul>
+<p>I considered adding a final section to this post with a quantitative assessment of how effective the changes have been so far. However, this post has already become much longer than anticipated. So, for now, I will conclude with a more qualitative, or anectdotal assessment and I may followup with another post that examines some more quantitative measures. But to be honest, in these matters I feel that a qualitative assessment is more valuable. As a manager I gauge the success of the team not on the count of tickets closed or lines of code written. Achieving our quarterly goals and meeting our stakeholders&rsquo; expectations is how we are judged by others, and that is more important than any numbers. Over the past 18 months we have done very well in satisfying stakeholder expectations. Part of that is due to setting reasonable expectation with our quarterly planning, but the bulk of that success comes from the team operating in a way that facilitates high quality and quantity of work.</p>
+<p>Success is one thing, but what is more pertinent to this post is gauging the team&rsquo;s progress. Over the past 18 months I have observed incredible teamwork, increased confidence, improved clarity of direction, proactive problem solving, and an increased desire for continual improvement. I am proud of the work we have accomplished, and I&rsquo;m not just talking about the software. I&rsquo;m talking about the culture.</p>
+<hr>
+<blockquote>
+<p>Banner image credit: UCLA Library Digital Collections</p>
+<p><a href="https://digital.library.ucla.edu/catalog/4vft2000zz-89112">https://digital.library.ucla.edu/catalog/4vft2000zz-89112</a></p>
+</blockquote>
+
+                    
+                    <HR width="100%" id="EOF">
+                    <p style="color:#777;">Last modified on 2020-05-01</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+                    Next<br>No newer posts.
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://misc.dev/posts/mic-check/">
+                    Previous<br>Mic Check
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	2020 MISC DEV
+	</div>
+    	</div>
+    <script src="https://misc.dev//js/journal.js"></script>
+    </body>
+</html>

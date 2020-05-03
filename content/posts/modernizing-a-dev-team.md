@@ -4,7 +4,7 @@ date: 2020-05-01T21:16:39-07:00
 featured_image: "images/modernizing.jpg"
 tags: ["management"]
 description: "A case study in adopting modern development practices"
-draft: true
+draft: false
 ---
 
 # Modernizing a Software Development Team
