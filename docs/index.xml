@@ -32,13 +32,13 @@
 &lt;p&gt;I spent the first few months on the job mostly observing the team and getting up to speed on their current projects and future ambitions. Here is what I found.&lt;/p&gt;
 &lt;h4 id=&#34;1-structure&#34;&gt;1. Structure&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Low team cohesion.&lt;/strong&gt; The developers were in two different teams without much collaboration between them. The supporting sys admins were on a third team. Thus software development was split across three different managers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Low team cohesion.&lt;/strong&gt; The developers were in two different teams without much collaboration between them. The supporting sys admins were on a third team. Thus the software development process was split across three different managers.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Siloed knowledge.&lt;/strong&gt; Most of the developers worked on projects as solo developers, not as a team. This gives each system a single point of failure in regards to maintenance and support.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;2-process&#34;&gt;2. Process&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;No standard dev process.&lt;/strong&gt; As solo agents without a standard process, the developers mostly reacted to incoming tickets from stakeholders.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Unending projects.&lt;/strong&gt; Without a standard process to define scope, most projects did not have a clear goal for completion and had lingered for years.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unending projects.&lt;/strong&gt; Without a standard process to define scope, many projects did not have a clear goal for completion and had lingered for years.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Unrealistic volume of projects.&lt;/strong&gt; The combination of unending projects with a continual desire to keep doing more &lt;em&gt;new&lt;/em&gt; projects meant that the list of active projects grew without bound.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;3-software&#34;&gt;3. Software&lt;/h4&gt;
@@ -50,9 +50,9 @@ Difficult maintenance and deployments. Technical debt reached a level at which i
 &lt;/ul&gt;
 &lt;h4 id=&#34;4-skills&#34;&gt;4. Skills&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Pockets of stagnation.&lt;/strong&gt; Some of those siloed developers working on aging systems were never asked or given time to build with new tools.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pockets of stagnation.&lt;/strong&gt; Some of those siloed developers working on aging systems were never asked or given time to build with new tools. Some kept up with modern tools on their own time.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Widely diverse tool sets.&lt;/strong&gt; Each system was built by one of an array of siloed developers or another array of independent vendors, each using their preferred tools, leading to a portfolio that goes well beyond the modern trend of “polyglot.”&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Team attrition.&lt;/strong&gt; Developers for major systems, notably the original digital collections system and the main website CMS, left the team and their positions were filled with developers whose expertise fit newer projects’ needs instead. Thus, the two most important systems are in a fragile state of support.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Team attrition.&lt;/strong&gt; Developers for major systems, notably the original digital collections system and the main website CMS, left the team and their positions were filled with developers whose expertise fit newer projects’ needs instead. Thus, the two most important systems are in a state of weak support.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Outsourced expertise.&lt;/strong&gt; Many of the systems were built by vendors and handed over to the in-house developers for support.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;ii-inspiration&#34;&gt;II. Inspiration&lt;/h3&gt;

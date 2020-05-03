@@ -35,13 +35,13 @@ I spent the first few months on the job mostly observing the team and getting up
 
 #### 1. Structure
 
-- **Low team cohesion.** The developers were in two different teams without much collaboration between them. The supporting sys admins were on a third team. Thus software development was split across three different managers.
+- **Low team cohesion.** The developers were in two different teams without much collaboration between them. The supporting sys admins were on a third team. Thus the software development process was split across three different managers.
 - **Siloed knowledge.** Most of the developers worked on projects as solo developers, not as a team. This gives each system a single point of failure in regards to maintenance and support.
 
 #### 2. Process
 
 - **No standard dev process.** As solo agents without a standard process, the developers mostly reacted to incoming tickets from stakeholders.
-- **Unending projects.** Without a standard process to define scope, most projects did not have a clear goal for completion and had lingered for years.
+- **Unending projects.** Without a standard process to define scope, many projects did not have a clear goal for completion and had lingered for years.
 - **Unrealistic volume of projects.** The combination of unending projects with a continual desire to keep doing more *new* projects meant that the list of active projects grew without bound.
 
 #### 3. Software
@@ -53,9 +53,9 @@ Difficult maintenance and deployments. Technical debt reached a level at which i
 
 #### 4. Skills
 
-- **Pockets of stagnation.** Some of those siloed developers working on aging systems were never asked or given time to build with new tools.
+- **Pockets of stagnation.** Some of those siloed developers working on aging systems were never asked or given time to build with new tools. Some kept up with modern tools on their own time.
 - **Widely diverse tool sets.** Each system was built by one of an array of siloed developers or another array of independent vendors, each using their preferred tools, leading to a portfolio that goes well beyond the modern trend of “polyglot.”
-- **Team attrition.** Developers for major systems, notably the original digital collections system and the main website CMS, left the team and their positions were filled with developers whose expertise fit newer projects’ needs instead. Thus, the two most important systems are in a fragile state of support.
+- **Team attrition.** Developers for major systems, notably the original digital collections system and the main website CMS, left the team and their positions were filled with developers whose expertise fit newer projects’ needs instead. Thus, the two most important systems are in a state of weak support.
 - **Outsourced expertise.** Many of the systems were built by vendors and handed over to the in-house developers for support.
 
 ### II. Inspiration
