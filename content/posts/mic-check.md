@@ -20,7 +20,7 @@ Hence, again, the name **misc.dev**.
 
 ---
 
-> Image credit: UCLA Library Digital Collections
+> Banner image credit: UCLA Library Digital Collections
 >
 > https://digital.library.ucla.edu/catalog/kjccd200zz-89112
 
