@@ -48,7 +48,7 @@ I spent the first few months on the job mostly observing the team and getting up
 
 - **Untenable portfolio of systems.** As the aging digital collections system became unable to support the requirements of new projects, a series of boutique systems were created. 
 - **Inconsistent UX.** Each system was created by a different developer or vendor, with no central UX process, person, or team to review them.
-Difficult maintenance and deployments. Technical debt reached a level at which it became impossible to update some systems. Deployments for most systems were manual and cumbersome.
+- **Difficult maintenance and deployments.** Technical debt reached a level at which it became impossible to update some systems. Deployments for most systems were manual and cumbersome.
 - **Spotty performance and availability.** The older systems experience frequent outages requiring reboots. Others have high latency. Some are all but broken in modern browsers (i.e. Flash).
 
 #### 4. Skills
