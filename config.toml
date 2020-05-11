@@ -22,3 +22,7 @@ googleAnalytics = "UA-165394731-1"
       hardWraps = false
       unsafe = true
       xhtml = false
+[[menu.main]]
+url = "/about"
+name = "About"
+weight = 1

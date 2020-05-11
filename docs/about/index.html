@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.68.1" />
-<title>MISC DEV</title>
+<title>About Me</title>
 
 <meta charset="utf-8">
 <meta name="X-UA-Compatible" content="IE=edge">
@@ -57,11 +56,7 @@ if (!doNotTrack) {
 
 
 
-<style>
-  .toc{
-    display: none !important;
-  }
-</style>
+<script src="https://misc.dev//js/toc.js"></script>
 
 
 
@@ -73,7 +68,7 @@ if (!doNotTrack) {
 </head><body>
     	<div id="app"><div ref="sideContainer" class="side-container">
     
-    <a class="a-block nav-head active" href="https://misc.dev/">
+    <a class="a-block nav-head false" href="https://misc.dev/">
     
         <div class="nav-title">
             MISC DEV
@@ -87,9 +82,11 @@ if (!doNotTrack) {
             
             
             
+                
             
             
-            <a class="a-block nav-link-item false" href="/about">
+            
+            <a class="a-block nav-link-item active" href="/about">
                 About
             </a>
             
@@ -114,6 +111,43 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 </div><div ref="extraContainer" class="extra-container">
     
     
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#joshua-gomez" v-on:click="closeDrawer" id="joshua-gomez-nav">
+										 Joshua Gomez
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
+</div>
+    
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
             <i class="material-icons pagination-action-icon">
@@ -131,8 +165,6 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
         </a>
         
         
-        
-        
     </div>
 </div><div class="single-column-drawer-container" ref="drawer"
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
@@ -144,13 +176,52 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 
                 
                 
+                    
                 
                 
-                <a class="a-block drawer-menu-item false" href="/about">
+                
+                <a class="a-block drawer-menu-item active" href="/about">
                     About
                 </a>
                 
             
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#joshua-gomez" v-on:click="closeDrawer" id="joshua-gomez-nav">
+										 Joshua Gomez
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
+</div>
             
         </div>
     </div>
@@ -190,72 +261,77 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
     </a>
 </div>
             <div id="content">
-
 <div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-no-background">
-        
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
             
-            <a href="https://misc.dev/posts/modernizing-a-dev-team/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-divider">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                Modernizing a Software Development Team
-                            </div>
-                            <div class="post-item-summary">
-                                A case study in adopting modern development practices
-                            </div>
-                            <div class="post-item-meta">
-                                2020-05-01
-                            </div>
-                        </div>
+            
+            
+                
+            
+
+            <div class="post-head-wrapper"
+                 style="background-image: url('/images/smell_of_books.jpg')">
+                <div class="post-title">
+                    About Me
+                    
+                    <div class="post-meta">
                         
+
                         
-                            <div class="post-item-image-wrapper">
-                            <div class="post-item-image"
-                                 style="background-image: url('/images/modernizing.jpg')"></div>
-                            </div>
+
                         
                     </div>
                 </div>
+            </div>
             
-        
-            
-            <a href="https://misc.dev/posts/mic-check/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-divider">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                Mic Check
-                            </div>
-                            <div class="post-item-summary">
-                                What&#39;s this all about?
-                            </div>
-                            <div class="post-item-meta">
-                                2020-04-25
-                            </div>
-                        </div>
-                        
-                        
-                            <div class="post-item-image-wrapper">
-                            <div class="post-item-image"
-                                 style="background-image: url('/images/uclamss_1429_2581.jpg')"></div>
-                            </div>
-                        
-                    </div>
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h2 id="joshua-gomez">Joshua Gomez</h2>
+<img width="150" alt="Joshua Gomez" src="/images/joshua.jpg">
+<hr>
+<p>I am an engineering manager and software architect who has been working in libraries and museums since I was in high school. Currently, I work at the <a href="https://library.ucla.edu">UCLA Library</a> as the Head of Software Development &amp; Library Systems. Prior to that, I led a software development team at <a href="https://getty.edu/research/">The Getty Research Institute</a>. I earned my master&rsquo;s degree from the <a href="https://ischool.berkeley.edu">School of Information</a> at <a href="https://www.berkeley.edu">UC Berkeley</a>.</p>
+<hr>
+<p>You can find me at these accounts as well:</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/joshua-gomez-8744823/">LinkedIn</a></li>
+<li><a href="https://twitter.com/joshuago78">Twitter</a></li>
+<li><a href="https://github.com/joshuago78/">Github</a></li>
+</ul>
+
+                    
                 </div>
+            </div>
             
-        
             
-        
-        </a>
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://misc.dev/posts/mic-check/">
+                    Next<br>Mic Check
+                </a>
+                
+                
+                
+                <a class="older-posts">
+                    Previous<br>No older posts.
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+            </div>
+        </div>
     </div>
 </div>
 
-            </div>
-
-
-<div id="single-column-footer">
+            </div><div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
 <br>
 Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
