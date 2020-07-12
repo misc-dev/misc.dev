@@ -1,6 +1,6 @@
 baseURL = "https://misc.dev/"
 languageCode = "en-us"
-title = "MISC DEV"
+title = "MISC.DEV"
 theme = "diary"
 publishDir = "docs"
 googleAnalytics = "UA-165394731-1"
