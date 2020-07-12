@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on MISC DEV</title>
+    <title>Tags on MISC.DEV</title>
     <link>https://misc.dev/tags/</link>
-    <description>Recent content in Tags on MISC DEV</description>
+    <description>Recent content in Tags on MISC.DEV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 21:16:39 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2020 10:29:35 -0700</lastBuildDate>
     
 	<atom:link href="https://misc.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>management</title>
       <link>https://misc.dev/tags/management/</link>
-      <pubDate>Fri, 01 May 2020 21:16:39 -0700</pubDate>
+      <pubDate>Fri, 15 May 2020 10:29:35 -0700</pubDate>
       
       <guid>https://misc.dev/tags/management/</guid>
       <description></description>
