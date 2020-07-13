@@ -1,6 +1,6 @@
 ---
 title: "On Growing a Nonprofit Dev Team"
-date: 2020-05-15T10:29:35-07:00
+date: 2020-07-12
 featured_image: "images/growing.jpg"
 tags: ["management"]
 description: "Steps you can take to add highly skilled people to your team"
