@@ -6,11 +6,7 @@
     <description>Recent content in Posts on MISC.DEV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://misc.dev/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://misc.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Growing a Nonprofit Dev Team</title>
       <link>https://misc.dev/posts/building-a-nonprofit-dev-team/</link>
@@ -37,7 +33,7 @@
       <guid>https://misc.dev/posts/mic-check/</guid>
       <description>Microphone check, one two, one two!
 In this blog I will discuss things I am interested in, which are broad and varied, hence the name misc. I will try to stay (mostly) focused on topics related to my professional career, thus topics that will likely be covered most often include:
- M: Management I: Information Studies (and Interface/Interaction Design) S: Systems Thinking/Theory C: Complexity and of course, software development  Hence, again, the name misc.</description>
+M: Management I: Information Studies (and Interface/Interaction Design) S: Systems Thinking/Theory C: Complexity and of course, software development Hence, again, the name misc.</description>
     </item>
     
   </channel>

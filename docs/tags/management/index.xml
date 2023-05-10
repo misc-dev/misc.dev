@@ -6,11 +6,7 @@
     <description>Recent content in management on MISC.DEV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://misc.dev/tags/management/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://misc.dev/tags/management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Growing a Nonprofit Dev Team</title>
       <link>https://misc.dev/posts/building-a-nonprofit-dev-team/</link>

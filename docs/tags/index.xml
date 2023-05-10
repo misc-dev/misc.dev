@@ -6,11 +6,7 @@
     <description>Recent content in Tags on MISC.DEV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://misc.dev/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://misc.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>management</title>
       <link>https://misc.dev/tags/management/</link>

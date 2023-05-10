@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://misc.dev/tags/management/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/posts/building-a-nonprofit-dev-team/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/posts/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/tags/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/posts/modernizing-a-dev-team/</loc>
     <lastmod>2020-05-01T21:16:39-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/posts/mic-check/</loc>
     <lastmod>2020-04-25T18:43:04-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://misc.dev/categories/</loc>
   </url>
-  
 </urlset>

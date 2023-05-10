@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "MISC.DEV"
 theme = "diary"
 publishDir = "docs"
-googleAnalytics = "UA-165394731-1"
+googleAnalytics = "G-L6P0ZFTFX5"
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
